@@ -7,7 +7,7 @@
 ---
 #### Application SS
 
-<img src="https://i.ibb.co/LJW4fhr/roaster-ss.jpg" alt="roaster-ss" width="100" >
+<img src="https://i.ibb.co/LJW4fhr/roaster-ss.jpg" alt="roaster-ss" width="200" >
 
 ---
 <img src="https://img.shields.io/badge/framework-React Native-blue?style=flat" >
