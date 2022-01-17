@@ -149,7 +149,7 @@ export default function App() {
             taskItemFromStorage.filter(item => mainGroup.name !== 'All' ? item.group.name === mainGroup.name : item).map((item, index) => {
               return (
 
-                <Pressable key={index} style={{ paddingHorizontal: 10 }} >
+                <Pressable key={index} style={{ paddingHorizontal: 10 }} onLongPress={handleDeleteTask} >
                   <Task text={item.text} color={item.group.color} />
                 </Pressable>
 
