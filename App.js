@@ -134,7 +134,7 @@ export default function App() {
 
       {/* Today's task */}
       <View style={styles.taskWrapper}>
-        <Text style={styles.sectionTitle}>sassy</Text>
+        <Text style={styles.sectionTitle}>To-Do</Text>
 
         {/* Drop Down Menu */}
         <View>
@@ -149,7 +149,7 @@ export default function App() {
             taskItemFromStorage.filter(item => mainGroup.name !== 'All' ? item.group.name === mainGroup.name : item).map((item, index) => {
               return (
 
-                <Pressable style={{ paddingHorizontal: 10 }} >
+                <Pressable key={index} style={{ paddingHorizontal: 10 }} >
                   <Task text={item.text} color={item.group.color} />
                 </Pressable>
 

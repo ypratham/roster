@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     dropDownWrapper: {
         padding: 10,
         width: 100,
-        backgroundColor: '#CAF7E3',
+        backgroundColor: '#EFF1F3',
         borderRadius: 10,
         flexDirection: 'row',
         justifyContent: 'space-around',

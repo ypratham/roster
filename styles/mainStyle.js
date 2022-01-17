@@ -1,12 +1,14 @@
 import { StyleSheet } from "react-native";
 
+
+
 export default StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#D6E5FA',
+        backgroundColor: '#E5E7EB',
     },
     taskWrapper: {
-        paddingTop: 80,
+        paddingTop: 50,
         paddingHorizontal: 20,
     },
     sectionTitle: {
@@ -16,7 +18,7 @@ export default StyleSheet.create({
     },
     items: {
         height: 510,
-        marginTop: 20,
+        marginTop: 20
     },
     input: {
         backgroundColor: '#fff',

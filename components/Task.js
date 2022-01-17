@@ -5,21 +5,16 @@ import { LinearGradient } from 'expo-linear-gradient';
 export default function Task(props) {
 
     return (
-        <LinearGradient
-            style={styles.item}
-            colors={['rgba(133,253,246,0.53)', '#CAF7E3']}
-            start={[0, 0]}
-            end={[1, 1]}
-            locations={[0, 1]}
+        <View style={styles.item}
         >
             <View style={styles.itemLeft}>
-                <View style={[styles.square, { backgroundColor: props.color }]}></View>
+                <View style={[styles.square, { borderColor: props.color }]}></View>
                 <View style={{ width: '90%' }}>
                     <Text style={{ fontFamily: 'OpenSans', fontSize: 16 }}>{props.text}</Text>
                     <Text style={styles.dueDate}>Today</Text>
                 </View>
             </View>
-        </LinearGradient>
+        </View>
     )
 }
 
@@ -42,6 +37,7 @@ const styles = StyleSheet.create({
         height: 14,
         width: 14,
         borderRadius: 8,
+        borderWidth: 2,
         marginEnd: 10,
     },
     dueDate: {
