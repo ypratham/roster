@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "todoList",
+    "name": "Bedant Hota",
     "slug": "todoList",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,7 +23,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "ypratham.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"

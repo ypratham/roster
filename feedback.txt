@@ -1,0 +1,5 @@
+-bedantH:
+ - Hide keyboard when user taps out of keyboard area.
+    - Add a tap gesture recognizer to dismiss the keyboard.
+    - Drag press to delete
+    - When the user selects a group on input that should be displayed on the main group.
