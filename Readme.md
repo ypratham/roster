@@ -1,4 +1,4 @@
-## Roaster
+## Roster
 
 
 - Manage all your day-to-day task at one place with this simple to-do application made with React Native. 
