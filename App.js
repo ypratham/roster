@@ -1,5 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
-import { KeyboardAvoidingView, Text, TextInput, TouchableOpacity, View, ScrollView, Alert, Pressable, ToastAndroid } from 'react-native';
+import {
+  KeyboardAvoidingView, Text, TextInput, TouchableOpacity, View, ScrollView, Alert, Pressable, ToastAndroid, Platform,
+  AlertIOS,
+} from 'react-native';
 import Task from './components/Task';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import styles from './styles/mainStyle.js';
@@ -103,7 +106,9 @@ export default function App() {
     let itemCopy = [...taskItemFromStorage];
     itemCopy.splice(index, 1);
     storeTask(JSON.stringify(itemCopy));
-    taskDeleteToast();
+    if (Platform.OS === 'android') {
+      taskDeleteToast();
+    }
   }
 
   // Alert when an empty task is added
@@ -163,7 +168,7 @@ export default function App() {
 
       {/* Bottom input area */}
       <KeyboardAvoidingView
-        behavior="height"
+        behavior="padding"
         style={styles.inputWrapper}
       >
         <TextInput
